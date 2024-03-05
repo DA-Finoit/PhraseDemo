@@ -20,6 +20,24 @@ phrase:
         file_format: csv
         update_translations: true
 
+  # Demo3
+  - file: ./en.csv
+    project_id: "1a3075810d1d464dc17d5bdde35aaac2"
+    params:
+      locale_id: "b300e53839060171e65d8ab2a6c91be9"
+      file_format: csv
+      update_translations: true
+
+
+  # Demo4
+  - file: ./en.csv
+    project_id: "18aeb06f40d919d0f3d97e5d5714b770"
+    params:
+      locale_id: "5bab446b00bf11f463a85be27d43a5df"
+      file_format: csv
+      update_translations: true
+
+
 
 
   pull:
@@ -27,10 +45,23 @@ phrase:
     # Demo1
     - file: ./en.csv
       project_id: "0fbdcc518e6a2d9aa5ba037d4833bf9f"
+        format_options:
+            export_tags: true
 
     # Demo2
     - file: ./en.csv
       project_id: "4d74f1ecb61ae818c00b2082774c4c48"
+        format_options:
+            export_tags: true
 
-      format_options:
-          export_tags: true
+        # Demo3
+        - file: ./en.csv
+          project_id: "1a3075810d1d464dc17d5bdde35aaac2"
+            format_options:
+                export_tags: true
+
+            # Demo4
+            - file: ./en.csv
+              project_id: "18aeb06f40d919d0f3d97e5d5714b770"
+                format_options:
+                    export_tags: true
