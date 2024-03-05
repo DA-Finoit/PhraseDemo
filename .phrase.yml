@@ -1,31 +1,36 @@
 phrase:
   access_token: d475a2993b43427d6da025629f8dd56bd7bade85ddc92e538e36ed6237f4bac7 #Add your personal access token to authenticate, you can find the steps on how to create one here: https://help.phrase.com/help/access-tokens
   file_format: csv
-  project_id: 4d74f1ecb61ae818c00b2082774c4c48
 
-  push:
+    push:
     sources:
-
-      # Demo1
+    # Demo1
     - file: ./en.csv
-
+      project_id: "0fbdcc518e6a2d9aa5ba037d4833bf9f"
       params:
-        file_format: csv
-        locale_id: en
-        update_translations: true
+        locale_id: "d0183a8917c19f8bd71daf354aae0ba9"
+          file_format: csv
+          update_translations: true
 
+    # Demo2
+    - file: ./en.csv
+      project_id: "4d74f1ecb61ae818c00b2082774c4c48"
+      params:
+        locale_id: "f942eea30bc9611ef20570c65e022cae"
+        file_format: csv
+        update_translations: true
 
 
 
   pull:
     targets:
-      # Demo1
+    # Demo1
     - file: ./en.csv
+      project_id: "0fbdcc518e6a2d9aa5ba037d4833bf9f"
 
+    # Demo2
+    - file: ./en.csv
+      project_id: "4d74f1ecb61ae818c00b2082774c4c48"
 
-      params:
-        file_format: csv
-        locale_id: en
-
-        format_options:
+      format_options:
           export_tags: true
