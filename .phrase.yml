@@ -11,6 +11,10 @@ phrase:
         locale_id: "d0183a8917c19f8bd71daf354aae0ba9"
           file_format: csv
           update_translations: true
+          locale_mapping:
+              en: 2
+          format_options:
+              tag_column: 3
 
     # Demo2
     - file: ./en.csv
@@ -19,6 +23,10 @@ phrase:
         locale_id: "f942eea30bc9611ef20570c65e022cae"
         file_format: csv
         update_translations: true
+          locale_mapping:
+              en: 2
+          format_options:
+              tag_column: 3
 
   # Demo3
   - file: ./en.csv
@@ -27,6 +35,10 @@ phrase:
       locale_id: "b300e53839060171e65d8ab2a6c91be9"
       file_format: csv
       update_translations: true
+        locale_mapping:
+            en: 2
+        format_options:
+            tag_column: 3
 
 
   # Demo4
@@ -36,7 +48,10 @@ phrase:
       locale_id: "5bab446b00bf11f463a85be27d43a5df"
       file_format: csv
       update_translations: true
-
+  locale_mapping:
+      en: 2
+  format_options:
+      tag_column: 3
 
 
 
