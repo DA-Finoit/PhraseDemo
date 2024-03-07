@@ -16,7 +16,8 @@ phrase:
         en: 2
 
       format_options:
-        tag_column: 3
+          key_index: 1
+          tag_column: 3
 
     # Demo2
     - file: ./en.csv
@@ -29,7 +30,8 @@ phrase:
             en: 2
 
           format_options:
-            tag_column: 3
+              key_index: 1
+              tag_column: 3
 
 
   # Demo3
@@ -43,6 +45,7 @@ phrase:
           en: 2
 
         format_options:
+          key_index: 1
           tag_column: 3
 
 
@@ -54,11 +57,12 @@ phrase:
       locale_id: "5bab446b00bf11f463a85be27d43a5df"
       file_format: csv
       update_translations: true
-      
+
   locale_mapping:
     en: 2
 
   format_options:
+    key_index: 1
     tag_column: 3
 
 
